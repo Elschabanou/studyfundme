@@ -2,5 +2,7 @@
   SUPABASE_URL = "https://tkjalihlfoqqztfnuwev.supabase.co"
   SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRramFsaWhsZm9xcXp0Zm51d2V2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA2MDIxMzksImV4cCI6MjA1NjE3ODEzOX0.6t3aUIZYTZgWFVoVEzF1x3uBBg19b2fDycWJX8u0FjE"
 
-[functions]
-  directory = "netlify/functions"
+[build] 
+  command = 'npm run build' 
+  functions= 'netlify/functions' 
+  publish = 'dist'
